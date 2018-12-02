@@ -1,0 +1,88 @@
+//header
+
+.border_line{
+	border-left: 1px solid #3b4a51;
+}
+
+.font(@col:white,@fz:14px){
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:@col;
+	font-size:@fz;
+}
+.font_1(@fz:14px){
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:white;
+	font-size:@fz;
+}
+
+//main > //prevy_post
+
+.white_font(@font:46px,@lh:12px){
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: @font;
+	color:white;
+	line-height: @lh;
+}
+
+.bg_aside{
+	box-shadow: 0px 0px 5px 3px rgba(218,218,218,1);
+}
+ // sidebar nav
+.nav_sidebar_first_child_a_style{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #455a64;
+	line-height: 30px;
+}
+
+.nav_sidebar_a_style{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color:#272727;
+}
+
+//last notes
+
+.LastNotes_a{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 15px;
+	color: #475055;
+	text-decoration: none;
+}
+
+.LastNotes_p{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	color: #a3abaf;
+}
+
+//Question
+
+.input_style{
+	border:1px solid #dde2e4;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 18px;
+	bottom: 18px;
+	text-indent: 20px;
+	height: 37px;
+	width: 258px;
+	outline: none;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #475055;
+}
+
+.placeholder{
+	color:#a3abaf; 
+	font-size:16px; 
+	font-family:Arial,Helvetica,sans-serif;
+}
+.placeholder_{
+	&::-webkit-input-placeholder {.placeholder;}
+		&::-moz-placeholder          {.placeholder;}
+		&:-moz-placeholder           {.placeholder;}
+		&:-ms-input-placeholder      {.placeholder;}
+		
+}
