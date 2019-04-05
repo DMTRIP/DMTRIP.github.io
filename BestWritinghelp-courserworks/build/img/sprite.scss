@@ -1,0 +1,343 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-additional-order-name: 'Additional-order';
+$-additional-order-x: 4394px;
+$-additional-order-y: 590px;
+$-additional-order-offset-x: -4394px;
+$-additional-order-offset-y: -590px;
+$-additional-order-width: 22px;
+$-additional-order-height: 27px;
+$-additional-order-total-width: 4436px;
+$-additional-order-total-height: 2370px;
+$-additional-order-image: 'sprite.png';
+$-additional-order: (4394px, 590px, -4394px, -590px, 22px, 27px, 4436px, 2370px, 'sprite.png', 'Additional-order', );
+$-arrow-name: 'Arrow';
+$-arrow-x: 4416px;
+$-arrow-y: 590px;
+$-arrow-offset-x: -4416px;
+$-arrow-offset-y: -590px;
+$-arrow-width: 11px;
+$-arrow-height: 25px;
+$-arrow-total-width: 4436px;
+$-arrow-total-height: 2370px;
+$-arrow-image: 'sprite.png';
+$-arrow: (4416px, 590px, -4416px, -590px, 11px, 25px, 4436px, 2370px, 'sprite.png', 'Arrow', );
+$-arrow2-name: 'Arrow2';
+$-arrow2-x: 4344px;
+$-arrow2-y: 641px;
+$-arrow2-offset-x: -4344px;
+$-arrow2-offset-y: -641px;
+$-arrow2-width: 11px;
+$-arrow2-height: 25px;
+$-arrow2-total-width: 4436px;
+$-arrow2-total-height: 2370px;
+$-arrow2-image: 'sprite.png';
+$-arrow2: (4344px, 641px, -4344px, -641px, 11px, 25px, 4436px, 2370px, 'sprite.png', 'Arrow2', );
+$-bg-dark2-name: 'Bg Dark2';
+$-bg-dark2-x: 1920px;
+$-bg-dark2-y: 2313px;
+$-bg-dark2-offset-x: -1920px;
+$-bg-dark2-offset-y: -2313px;
+$-bg-dark2-width: 1920px;
+$-bg-dark2-height: 57px;
+$-bg-dark2-total-width: 4436px;
+$-bg-dark2-total-height: 2370px;
+$-bg-dark2-image: 'sprite.png';
+$-bg-dark2: (1920px, 2313px, -1920px, -2313px, 1920px, 57px, 4436px, 2370px, 'sprite.png', 'Bg Dark2', );
+$-bg1-1-name: 'Bg1-1';
+$-bg1-1-x: 0px;
+$-bg1-1-y: 0px;
+$-bg1-1-offset-x: 0px;
+$-bg1-1-offset-y: 0px;
+$-bg1-1-width: 2540px;
+$-bg1-1-height: 582px;
+$-bg1-1-total-width: 4436px;
+$-bg1-1-total-height: 2370px;
+$-bg1-1-image: 'sprite.png';
+$-bg1-1: (0px, 0px, 0px, 0px, 2540px, 582px, 4436px, 2370px, 'sprite.png', 'Bg1-1', );
+$-bg1-name: 'Bg1';
+$-bg1-x: 0px;
+$-bg1-y: 2313px;
+$-bg1-offset-x: 0px;
+$-bg1-offset-y: -2313px;
+$-bg1-width: 1920px;
+$-bg1-height: 57px;
+$-bg1-total-width: 4436px;
+$-bg1-total-height: 2370px;
+$-bg1-image: 'sprite.png';
+$-bg1: (0px, 2313px, 0px, -2313px, 1920px, 57px, 4436px, 2370px, 'sprite.png', 'Bg1', );
+$-bg2-name: 'Bg2';
+$-bg2-x: 0px;
+$-bg2-y: 1752px;
+$-bg2-offset-x: 0px;
+$-bg2-offset-y: -1752px;
+$-bg2-width: 1896px;
+$-bg2-height: 561px;
+$-bg2-total-width: 4436px;
+$-bg2-total-height: 2370px;
+$-bg2-image: 'sprite.png';
+$-bg2: (0px, 1752px, 0px, -1752px, 1896px, 561px, 4436px, 2370px, 'sprite.png', 'Bg2', );
+$-bg3-1-name: 'Bg3-1';
+$-bg3-1-x: 0px;
+$-bg3-1-y: 1182px;
+$-bg3-1-offset-x: 0px;
+$-bg3-1-offset-y: -1182px;
+$-bg3-1-width: 1900px;
+$-bg3-1-height: 570px;
+$-bg3-1-total-width: 4436px;
+$-bg3-1-total-height: 2370px;
+$-bg3-1-image: 'sprite.png';
+$-bg3-1: (0px, 1182px, 0px, -1182px, 1900px, 570px, 4436px, 2370px, 'sprite.png', 'Bg3-1', );
+$-bg3-name: 'Bg3';
+$-bg3-x: 2540px;
+$-bg3-y: 0px;
+$-bg3-offset-x: -2540px;
+$-bg3-offset-y: 0px;
+$-bg3-width: 1896px;
+$-bg3-height: 561px;
+$-bg3-total-width: 4436px;
+$-bg3-total-height: 2370px;
+$-bg3-image: 'sprite.png';
+$-bg3: (2540px, 0px, -2540px, 0px, 1896px, 561px, 4436px, 2370px, 'sprite.png', 'Bg3', );
+$-chat-name: 'Chat';
+$-chat-x: 4344px;
+$-chat-y: 590px;
+$-chat-offset-x: -4344px;
+$-chat-offset-y: -590px;
+$-chat-width: 50px;
+$-chat-height: 29px;
+$-chat-total-width: 4436px;
+$-chat-total-height: 2370px;
+$-chat-image: 'sprite.png';
+$-chat: (4344px, 590px, -4344px, -590px, 50px, 29px, 4436px, 2370px, 'sprite.png', 'Chat', );
+$-chat2-name: 'Chat2';
+$-chat2-x: 4344px;
+$-chat2-y: 561px;
+$-chat2-offset-x: -4344px;
+$-chat2-offset-y: -561px;
+$-chat2-width: 50px;
+$-chat2-height: 29px;
+$-chat2-total-width: 4436px;
+$-chat2-total-height: 2370px;
+$-chat2-image: 'sprite.png';
+$-chat2: (4344px, 561px, -4344px, -561px, 50px, 29px, 4436px, 2370px, 'sprite.png', 'Chat2', );
+$-contact-us-name: 'Contact_us';
+$-contact-us-x: 4344px;
+$-contact-us-y: 619px;
+$-contact-us-offset-x: -4344px;
+$-contact-us-offset-y: -619px;
+$-contact-us-width: 23px;
+$-contact-us-height: 22px;
+$-contact-us-total-width: 4436px;
+$-contact-us-total-height: 2370px;
+$-contact-us-image: 'sprite.png';
+$-contact-us: (4344px, 619px, -4344px, -619px, 23px, 22px, 4436px, 2370px, 'sprite.png', 'Contact_us', );
+$-element1-name: 'Element1';
+$-element1-x: 4234px;
+$-element1-y: 781px;
+$-element1-offset-x: -4234px;
+$-element1-offset-y: -781px;
+$-element1-width: 110px;
+$-element1-height: 110px;
+$-element1-total-width: 4436px;
+$-element1-total-height: 2370px;
+$-element1-image: 'sprite.png';
+$-element1: (4234px, 781px, -4234px, -781px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element1', );
+$-element1-dark-name: 'Element1_dark';
+$-element1-dark-x: 4124px;
+$-element1-dark-y: 891px;
+$-element1-dark-offset-x: -4124px;
+$-element1-dark-offset-y: -891px;
+$-element1-dark-width: 110px;
+$-element1-dark-height: 110px;
+$-element1-dark-total-width: 4436px;
+$-element1-dark-total-height: 2370px;
+$-element1-dark-image: 'sprite.png';
+$-element1-dark: (4124px, 891px, -4124px, -891px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element1_dark', );
+$-element2-name: 'Element2';
+$-element2-x: 4124px;
+$-element2-y: 561px;
+$-element2-offset-x: -4124px;
+$-element2-offset-y: -561px;
+$-element2-width: 110px;
+$-element2-height: 110px;
+$-element2-total-width: 4436px;
+$-element2-total-height: 2370px;
+$-element2-image: 'sprite.png';
+$-element2: (4124px, 561px, -4124px, -561px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element2', );
+$-element2-dark-name: 'Element2_dark';
+$-element2-dark-x: 4234px;
+$-element2-dark-y: 891px;
+$-element2-dark-offset-x: -4234px;
+$-element2-dark-offset-y: -891px;
+$-element2-dark-width: 110px;
+$-element2-dark-height: 110px;
+$-element2-dark-total-width: 4436px;
+$-element2-dark-total-height: 2370px;
+$-element2-dark-image: 'sprite.png';
+$-element2-dark: (4234px, 891px, -4234px, -891px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element2_dark', );
+$-element3-name: 'Element3';
+$-element3-x: 4234px;
+$-element3-y: 561px;
+$-element3-offset-x: -4234px;
+$-element3-offset-y: -561px;
+$-element3-width: 110px;
+$-element3-height: 110px;
+$-element3-total-width: 4436px;
+$-element3-total-height: 2370px;
+$-element3-image: 'sprite.png';
+$-element3: (4234px, 561px, -4234px, -561px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element3', );
+$-element3-dark-name: 'Element3_dark';
+$-element3-dark-x: 4124px;
+$-element3-dark-y: 671px;
+$-element3-dark-offset-x: -4124px;
+$-element3-dark-offset-y: -671px;
+$-element3-dark-width: 110px;
+$-element3-dark-height: 110px;
+$-element3-dark-total-width: 4436px;
+$-element3-dark-total-height: 2370px;
+$-element3-dark-image: 'sprite.png';
+$-element3-dark: (4124px, 671px, -4124px, -671px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element3_dark', );
+$-element4-name: 'Element4';
+$-element4-x: 4124px;
+$-element4-y: 781px;
+$-element4-offset-x: -4124px;
+$-element4-offset-y: -781px;
+$-element4-width: 110px;
+$-element4-height: 110px;
+$-element4-total-width: 4436px;
+$-element4-total-height: 2370px;
+$-element4-image: 'sprite.png';
+$-element4: (4124px, 781px, -4124px, -781px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element4', );
+$-element4-dark-name: 'Element4_dark';
+$-element4-dark-x: 4234px;
+$-element4-dark-y: 671px;
+$-element4-dark-offset-x: -4234px;
+$-element4-dark-offset-y: -671px;
+$-element4-dark-width: 110px;
+$-element4-dark-height: 110px;
+$-element4-dark-total-width: 4436px;
+$-element4-dark-total-height: 2370px;
+$-element4-dark-image: 'sprite.png';
+$-element4-dark: (4234px, 671px, -4234px, -671px, 110px, 110px, 4436px, 2370px, 'sprite.png', 'Element4_dark', );
+$-login-icon-name: 'Login-icon';
+$-login-icon-x: 4394px;
+$-login-icon-y: 561px;
+$-login-icon-offset-x: -4394px;
+$-login-icon-offset-y: -561px;
+$-login-icon-width: 41px;
+$-login-icon-height: 25px;
+$-login-icon-total-width: 4436px;
+$-login-icon-total-height: 2370px;
+$-login-icon-image: 'sprite.png';
+$-login-icon: (4394px, 561px, -4394px, -561px, 41px, 25px, 4436px, 2370px, 'sprite.png', 'Login-icon', );
+$-vector-header-name: 'Vector-header';
+$-vector-header-x: 2540px;
+$-vector-header-y: 1161px;
+$-vector-header-offset-x: -2540px;
+$-vector-header-offset-y: -1161px;
+$-vector-header-width: 1170px;
+$-vector-header-height: 50px;
+$-vector-header-total-width: 4436px;
+$-vector-header-total-height: 2370px;
+$-vector-header-image: 'sprite.png';
+$-vector-header: (2540px, 1161px, -2540px, -1161px, 1170px, 50px, 4436px, 2370px, 'sprite.png', 'Vector-header', );
+$fon-name: 'fon';
+$fon-x: 0px;
+$fon-y: 582px;
+$fon-offset-x: 0px;
+$fon-offset-y: -582px;
+$fon-width: 1920px;
+$fon-height: 600px;
+$fon-total-width: 4436px;
+$fon-total-height: 2370px;
+$fon-image: 'sprite.png';
+$fon: (0px, 582px, 0px, -582px, 1920px, 600px, 4436px, 2370px, 'sprite.png', 'fon', );
+$fon1-name: 'fon1';
+$fon1-x: 2540px;
+$fon1-y: 561px;
+$fon1-offset-x: -2540px;
+$fon1-offset-y: -561px;
+$fon1-width: 1584px;
+$fon1-height: 600px;
+$fon1-total-width: 4436px;
+$fon1-total-height: 2370px;
+$fon1-image: 'sprite.png';
+$fon1: (2540px, 561px, -2540px, -561px, 1584px, 600px, 4436px, 2370px, 'sprite.png', 'fon1', );
+$spritesheet-width: 4436px;
+$spritesheet-height: 2370px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($-additional-order, $-arrow, $-arrow2, $-bg-dark2, $-bg1-1, $-bg1, $-bg2, $-bg3-1, $-bg3, $-chat, $-chat2, $-contact-us, $-element1, $-element1-dark, $-element2, $-element2-dark, $-element3, $-element3-dark, $-element4, $-element4-dark, $-login-icon, $-vector-header, $fon, $fon1, );
+$spritesheet: (4436px, 2370px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(/build/img/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

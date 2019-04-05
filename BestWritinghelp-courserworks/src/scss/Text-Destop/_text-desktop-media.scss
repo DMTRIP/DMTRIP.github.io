@@ -1,0 +1,119 @@
+@media screen and (max-width: 760px){
+.istant{
+  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .istant-form-item:first-child{
+    width: 100%;
+  }
+  .istant-form-item:nth-child(2){
+    width: 68%;
+  }
+
+  .istant-form-item-last{
+    width: 25% !important;
+  }
+}
+
+  .valuta-data{
+    .valuta-data-item{
+      &:first-child{
+        align-items: center;
+      }
+      &:nth-child(3){
+        display: none;
+      }
+      &:nth-child(4){
+        display: none;
+      }
+      &:nth-child(5){
+        display: none;
+      }
+      &:nth-child(6){
+        display: none;
+      }
+
+    }
+
+  }
+  .contact-us-container{
+    width: 100%;
+    header{
+      margin: 0;
+      margin-bottom: 6px;
+      width: 100%;
+      div{
+        p{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      > a{
+        display: none;
+      }
+    }
+
+    .contact-form{
+      width: 100%;
+      margin: 0;
+      margin-bottom: calculateRem(40px);
+      form{
+        padding: calculateRem(20px);
+        >div{
+          flex-direction: column;
+          > div{
+            width: 100%;
+          }
+          label{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .contact-table{
+      width: 100%;
+      margin: 0;
+      margin-bottom: calculateRem(40px);
+      tr{
+        td:last-child{
+          display: none;
+        }
+      }
+    }
+
+
+  }
+
+  .customer-right{
+    display: none;
+  }
+
+  .place-for-banner-1,.place-for-banner-2{
+    display: none;
+  }
+
+  .lorem-ipsum-white{
+    width: 100%;
+  }
+}
+@media screen and(max-width: 578px){
+  .lorem-2{
+    padding: 0 calculateRem(30px) !important;
+  }
+}
+
+@media screen and(max-width: 500px){
+
+  .istant{
+    .istant-form-item{
+      width: 100% !important;
+    }
+  }
+
+
+
+
+}

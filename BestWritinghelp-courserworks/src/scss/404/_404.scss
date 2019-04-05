@@ -1,0 +1,63 @@
+.wrapper-404{
+  min-height: 700px;
+background:   url("/build/svg/404.svg") no-repeat,
+url("/build/svg/Logo404.svg") no-repeat 0% 15%,
+  url("/build/svg/brake2.svg") no-repeat right 10%;
+
+  background-color: #013056;
+  padding-bottom: calculateRem(200px);
+  p{
+    font-family: 'Roboto Light',sans-serif;
+    color: #56b1fa;
+    font-weight: 100;
+    font-size: calculateRem(60px);
+    padding-top: 14rem;
+    padding-left: 8rem;
+    span{
+      font-weight: normal;
+    }
+  }
+  .break-1{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+  background: url("/build/svg/brake1.svg") no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+  }
+  .text-404{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    background: url("/build/svg/404-text.svg") no-repeat;
+    background-size: contain;
+    background-position: 0 20%;
+    margin-left: 3rem;
+  }
+  .buttons-404{
+    display: flex;
+    a{
+      @include font-roboto-medium(24,#fff);
+      background: #1b7fd0;
+      text-transform: uppercase;
+      padding: calculateRem(13px) calculateRem(25px);
+      &:first-child{
+        margin-left: 28rem;
+      }
+      &:last-child{
+        margin-left: 2rem;
+      }
+    }
+  }
+
+}
+.page-header{
+
+}
+
+.wrapper-404-2{
+  background:url("/build/svg/404.svg") no-repeat;
+  background-color: #013056;
+
+}
+

@@ -1,0 +1,96 @@
+            //========INDEX==========//
+@media screen and (max-width: 500px){
+  .sidenav-trigger, .login-link-md, .chat-link-md{
+    display: none !important;
+  }
+
+
+  .header-top__tel{
+    display: flex !important;
+    justify-content: space-between !important;
+    img{
+      display: block !important;
+    }
+    p{
+      //display: none;
+    }
+  }
+  .sidenav-trigger-sm{
+    display: block !important;
+  }
+
+  .nav-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+      P{
+        margin: 0;
+        margin-left:3rem;
+        color: #fff;
+          a{
+            color: #fff;
+            margin-left: 0.3rem;
+          }
+      }
+
+  }
+
+
+  //=============preview========//
+
+  .preview{
+
+    .container-fluid{
+      background:url('/build/img/Bg-elem1.png') no-repeat,
+                 url('/build/img/sm-preview-bg.png')  no-repeat;
+      background-size: cover;
+
+    }
+
+    .col-12{
+      padding: 0;
+    }
+
+    h1{
+      text-align: left;
+      font-size: calculateRem(24px);
+    }
+    h3{
+      margin-left:1.5rem;
+    }
+    .offers{
+      li{
+        margin-left:1.5rem;
+        a{
+        }
+      }
+    }
+
+    .rectangles{
+      flex-direction: column;
+      margin: 0;
+      a{
+        width: 100%;
+        margin-bottom: calculateRem(14px);
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+  .hide-on-sm{
+    display: none;
+  }
+  .d-on-sm{
+    display: block !important;
+  }
+
+}
+
+
+

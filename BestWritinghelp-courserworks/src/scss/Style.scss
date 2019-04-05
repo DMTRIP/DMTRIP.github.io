@@ -1,0 +1,26 @@
+@import "_normalize";
+@import "_variabels";
+@import "index-scss/_header.scss";
+@import "_fonts";
+@import "index-scss/burger";
+@import "interaktive";
+@import "Blog-Post/blog";
+@import "Blog/blog";
+@import "Order/order";
+@import "Order-details/order-details";
+@import "Order-list/Order-list";
+@import "Text-Destop/text-desktop";
+@import "404/404";
+@import "except-index";
+
+
+@import "index-scss/media-1024";
+@import "index-scss/media-320";
+@import "index-scss/media-index";
+@import "index-scss/main-normalize";
+@import "Blog-Post/blog-media";
+@import "Blog/blog-media";
+@import "Order/order-media";
+@import "Order-details/order-detail-media";
+@import "Order-list/order-list-media";
+@import "Text-Destop/text-desktop-media";

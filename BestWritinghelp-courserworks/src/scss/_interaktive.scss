@@ -1,0 +1,97 @@
+.about-item-event {
+  width: 25%;
+  min-height: 650px;
+  position: relative;
+  padding: calculateRem(20px);
+  @media screen and (min-width: 581px) {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: transparent;
+      left: 0;
+      bottom: -12px;
+      box-shadow: 4px 4px 7px #9bb6be;
+      width: 3px;
+      height: 17px;
+      transform: rotate(9deg);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 16px 19px 0 0;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    background: #fff;
+  }
+}
+
+.bg-white{
+  background: #fff;
+}
+
+.art-display{
+  display: flex !important;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative !important;
+  span{
+    position: absolute; /* Абсолютное позиционирование */
+   top: -2.1rem;
+    left:2rem;
+    /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-bottom: 15px solid #fff; /* Добавляем треугольник */
+  }
+    a{
+    width: 40%;
+    align-self: center;
+    margin-top: calculateRem(40px);
+  }
+  @media screen and (max-width: 393px) {
+    a{
+      width: 100%;
+    }
+  }
+}
+
+.art-display-2-pos{
+  span{
+    position: absolute; /* Абсолютное позиционирование */
+    top: -2.1;
+    left: 30%;
+    /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-bottom: 15px solid #000; /* Добавляем треугольник */
+  }
+}
+
+.art-display-3-pos{
+  span{
+    position: absolute; /* Абсолютное позиционирование */
+    top: -2.1;
+    left:14.8rem;
+    /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-bottom: 15px solid #fff; /* Добавляем треугольник */
+  }
+}
+
+.art-display-4-pos{
+  span{
+    position: absolute; /* Абсолютное позиционирование */
+    top: -2.1;
+    left:21rem;
+    /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-bottom: 15px solid #fff; /* Добавляем треугольник */
+  }
+}

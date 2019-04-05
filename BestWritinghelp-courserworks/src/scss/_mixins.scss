@@ -1,0 +1,67 @@
+@import "variabels";
+@import "../../build/img/sprite";
+@mixin font-roboto-regular($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'Roboto Regular', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size / $baseFontSize * 1rem;}
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-roboto-thin($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'Roboto-Thin', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size / $baseFontSize * 1rem; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-roboto-bold($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size / $baseFontSize * 1rem; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-roboto-medium($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'Roboto Medium', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size / $baseFontSize * 1rem; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin font-arial-narrow($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: 'Arial Narrow Regular', Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size / $baseFontSize * 1rem; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+
+//
+//@mixin change-img($static:false,$hover:false,$active:false){
+//  &:after{
+//    content: '';
+//    margin-left: calculateRem(10px);
+//    @include sprite($static);
+//  }
+//
+//  &:hover{
+//    &:after{
+//      content: '';
+//      margin-left: calculateRem(10px);
+//      @include sprite($hover);
+//    }
+//  }
+//
+//  &:active{
+//    &:after{
+//      content: '';
+//      margin-left: calculateRem(10px);
+//      @include sprite($active);
+//    }
+//  }
+//}

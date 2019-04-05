@@ -1,0 +1,87 @@
+//==========INDEX============//
+@import "../fonts";
+@media screen and (max-width: 1024px) {
+  .menu{
+    display: none;
+  }
+
+  .sidenav-trigger{
+    display: block;
+  }
+
+  .header-top__tel{
+    justify-content: space-around !important;
+  }
+
+
+  .login-link-lg, .chat-link-lg{
+    display: none !important;
+  }
+
+  .login-link-md, .chat-link-md{
+    display: flex !important;
+    align-items: center;
+    @include font-roboto-regular(20,#caddea);
+    margin-left: calculateRem(5px);
+    text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
+  }
+
+  .nav-wrapper{
+    display: flex;
+    align-items: center;
+      .sidenav-trigger{
+        width: 60%;
+      }
+    .login-link-md{
+      margin-right: 3rem;
+    }
+  }
+
+  .hide-on-md{
+    display: none;
+  }
+
+  //=======preview========//
+
+
+  .preview{
+    .container-fluid{
+      background: url(/build/img/fon1.png) 0 0/cover no-repeat;
+      background-position-x: 72%;
+    }
+    .container{
+      background: none;
+    }
+    .offers{
+      li{
+        margin-left: calculateRem(40px);
+      }
+    }
+    h3{
+      margin-left: calculateRem(40px);
+    }
+
+
+
+  }
+
+  //========================//
+
+  .get-price-quote{
+    h4{
+      background-position-x: 48%;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

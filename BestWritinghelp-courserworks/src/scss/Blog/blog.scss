@@ -1,0 +1,225 @@
+.post-preview{
+  margin-bottom: calculateRem(40px);
+}
+
+main{
+  background: url("/build/svg/Bg1.svg") no-repeat;
+  background-position: bottom;
+}
+.blog-row{
+  margin-bottom: calculateRem(50px);
+}
+.gray-line{
+    @include font-roboto-bold(28,#1b7fd0);
+    text-transform: uppercase;
+    background: #caddea;
+    text-align: center;
+    box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+     padding: calculateRem(15px) 0;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: calculateRem(35px);
+  width: 100%;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 19px 0 0;
+    border-color: #caddea transparent transparent transparent;
+  }
+}
+
+.content-meta{
+  margin-bottom: calculateRem(40px);
+
+}
+
+
+.posts-bg{
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+
+  .post-item{
+      display: flex;
+      align-items: center;
+      img{
+        width: 110%;
+        height: auto;
+        margin-left: -3rem;
+        min-width: 220px;
+        min-height: 170px;
+      }
+        h3{
+          @include font-roboto-medium(22,#1b7fd0);
+          margin-top: 0;
+          text-transform: uppercase;
+        }
+      p{
+        @include font-arial-narrow(18,#000);
+        font-weight: normal;
+      }
+      hr{
+        background: #1b7fd0;
+        height: 2px;
+      }
+      .post-item-content{
+        margin-left: 1rem;
+      }
+
+      .post-item-footer{
+        display: flex;
+        justify-content: space-between;
+        a{
+          @include font-roboto-regular(16,#1b7fd0);
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        .post-tags{
+          span{
+            @include font-roboto-regular(14,#075da2);
+            text-transform: uppercase;
+            background: #caddea;
+            padding: calculateRem(5px) calculateRem(8px);
+          }
+        }
+
+      }
+
+      .post-data{
+        @include  font-roboto-medium(22,#a6cae3);
+        text-transform: uppercase;
+        writing-mode: sideways-lr;
+      }
+    }
+.post-preview-bg{
+  padding: 0;
+}
+
+}
+
+.post-item-revers{
+  flex-direction: row-reverse;
+  img{
+    margin-right: -3rem;
+  }
+  .post-item-content{
+    margin-right: 5rem;
+  }
+}
+
+.posts-bg{
+  .post-item{
+    &:first-child{
+      img{
+        margin-top: -2rem;
+      }
+    }
+    &:last-child{
+      img{
+        margin-bottom: -2rem;
+      }
+    }
+  }
+}
+
+// pagination
+
+.paginations{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-item {
+  &:first-child .page-link {
+    margin-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child .page-link {
+    border-radius: 0 5px 5px 0;
+  }
+  &.active .page-link {
+    z-index: 2;
+    background-color: #1b7fd0;
+    color: #fff;
+    pointer-events: none; cursor:default;
+  }
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-left: -1px;
+  line-height: 35px;
+  width: 35px;
+  text-align:center;
+  color: #1b7fd0;
+  background-color: #fff;
+  border: .75px solid #d2d2d2;
+    //&:hover{
+    //  background: #1b7fd0;
+    //}
+}
+
+.disabled .page-link,
+.page-link.disabled {
+  color: #1b7fd0;
+  pointer-events: none;
+  background-color: #f8f8f8;
+  cursor: default;
+}
+
+
+.pager {
+  display:table;
+  list-style:none;
+  padding:0;
+  font-size:12px;
+}
+
+.pager .page-link {
+  display:block;
+  width:auto;
+  white-space:nowrap;
+  padding:0 10px;
+  float:left;
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+}
+.pager span,
+.pager .material-icons {
+  display:block;
+  float:left;
+}
+
+
+.paginations .material-icons,
+.pager .material-icons {
+  font-size:16px;
+  line-height:inherit;
+}
+

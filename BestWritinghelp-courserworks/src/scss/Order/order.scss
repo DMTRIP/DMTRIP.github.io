@@ -1,0 +1,745 @@
+body{
+  background: #f4f6fa;
+}
+
+.contact-inf{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  background: #fff;
+  margin-bottom: calculateRem(35px);
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+  .form-wrapper {
+  padding: calculateRem(30px);
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+
+  & > label {
+    @include font-roboto-medium(15, #013056);
+
+    span {
+      color: #f83e3f;
+    }
+  }
+
+  & > label[for = "country"] {
+    margin-bottom: 2rem;
+  }
+
+  & > input {
+    background: #e9f7fe;
+    border: none;
+    min-height: 35px;
+    margin-bottom: calculateRem(20px);
+  }
+
+  span {
+    label {
+      @include font-roboto-regular(14, #013056);
+
+    }
+  }
+}
+}
+
+// select
+.select{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: #cccccc;
+  vertical-align: middle;
+  text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none;
+
+  .placeholder{
+    position: relative;
+    display: block;
+    background-color: #393d41;
+    z-index: 1;
+    padding: 0.4em;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover{
+      background: darken(#393d41,2%);
+    }
+
+    &:after{
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Font Awesome 5 Pro';
+      content: '\f078';
+      z-index: 10;
+    }
+  }
+
+  &.is-open{
+    .placeholder:after{
+      content: '\f077';
+    }
+    ul{
+      display: block;
+    }
+  }
+
+  &.select--white{
+    .placeholder{
+      background: #fff;
+      color: #999;
+      &:hover{
+        background: darken(#fff,2%);
+      }
+    }
+  }
+
+  ul{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+    max-height: 120px;
+
+    li{
+      display: block;
+      text-align: left;
+      padding: 0.8em 1em 0.8em 1em;
+      color: #999;
+      cursor: pointer;
+
+      &:hover{
+        background: #4ebbf0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.select--white{
+
+}
+
+
+@charset "UTF-8";
+.form-select {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+.form-select:focus, .form-select:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.form-select:after {
+  content: '▾';
+  position: absolute;
+  top: 0;
+  right: 12px;
+  z-index: 1;
+  color: #bbbbbb;
+  line-height: 40px;
+  font-size: 14px;
+}
+.ie .form-select:after {
+  display: none;
+}
+
+select {
+  position: relative;
+  background: transparent;
+  background-image: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: #888888;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  padding: 10px 10px 10px 5px;
+  text-overflow: '';
+  text-indent: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select[multiple=multiple] {
+  height: auto;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+  -moz-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+select[multiple=multiple]:hover {
+  border-color: #cccccc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+select option[disabled] {
+  color: #eeeeee;
+  text-shadow: none;
+  border: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #888888;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/*==========  Generic styling  ==========*/
+.column-6 {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -150px;
+  width: 100%;
+}
+
+.form-select{
+  border:none;
+  select{
+    background: url("/build/img/Down-Arrow-PNG-File.png") #e9f7fe;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+    background-position: 98% center;
+    @include font-roboto-regular(15,#013056);
+  }
+}
+
+.blue-form-line{
+  @include  font-roboto-medium(22,#fff);
+  padding: calculateRem(15px) 0;
+  background: #1b7fd0;
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.order-details{
+  margin: 0 auto;
+  width: 80%;
+  background: #fff;
+  box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+  margin-bottom: calculateRem(40px);
+}
+
+label {
+  display:block;
+  margin: 1em 1em .25em .75em;
+  font-size: 1.25em;
+  color:#333;
+}
+
+/* Container used for styling the custom select, the buttom class adds the bg gradient, corners, etc. */
+.dropdown {
+  position: relative;
+  display:block;
+  margin-top:0.5em;
+  padding:0;
+}
+
+/* This is the native select, we're making everything the text invisible so we can see the button styles in the wrapper */
+.dropdown select {
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  font-size:1.25em;
+  /* General select styles: change as needed */
+  /* font-weight: bold; */
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height:1.3;
+}
+.dropdown select,
+label {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select */
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;
+  /* These hacks make the select behind the arrow clickable in some browsers */
+  pointer-events:none;
+}
+
+/* This hides native dropdown button arrow in IE 10/11+ so it will have the custom appearance, IE 9 and earlier get a native select */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  /* Removes the odd blue bg color behind the text in IE 10/11 and sets the text to match the focus style text */
+  select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+}
+
+/* Firefox >= 2 -- Older versions of FF (v2 - 6) won't let us hide the native select arrow, so we'll just hide the custom icon and go with native styling */
+/* Show only the native arrow */
+body:last-child .dropdown::after, x:-moz-any-link {
+  display: none;
+}
+/* reduce padding */
+body:last-child .dropdown select, x:-moz-any-link {
+  padding-right: .8em;
+}
+
+/* Firefox 7+ -- Will let us hide the arrow, but inconsistently (see FF 30 comment below). We've found the simplest way to hide the native styling in FF is to make the select bigger than its container. */
+/* The specific FF selector used below successfully overrides the previous rule that turns off the custom icon; other FF hacky selectors we tried, like `*>.dropdown::after`, did not undo the previous rule */
+
+/* Set overflow:hidden on the wrapper to clip the native select's arrow, this clips hte outline too so focus styles are less than ideal in FF */
+_::-moz-progress-bar, body:last-child .dropdown {
+  overflow: hidden;
+}
+/* Show only the custom icon */
+_::-moz-progress-bar, body:last-child .dropdown:after {
+  display: block;
+}
+_::-moz-progress-bar, body:last-child .dropdown select {
+  /* increase padding to make room for menu icon */
+  padding-right: 1.9em;
+  /* `window` appearance with these text-indent and text-overflow values will hide the arrow FF up to v30 */
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for FF 30+ on Windows 8, we need to make the select a bit longer to hide the native arrow */
+  width: 110%;
+}
+
+/* At first we tried the following rule to hide the native select arrow in Firefox 30+ in Windows 8, but we'd rather simplify the CSS and widen the select for all versions of FF since this is a recurring issue in that browser */
+/* @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+.dropdown select { width:110%; }
+}   */
+
+
+/* Firefox 7+ focus style - This works around the issue that -moz-appearance: window kills the normal select focus. Using semi-opaque because outline doesn't handle rounded corners */
+_::-moz-progress-bar, body:last-child .dropdown select:focus {
+  outline: 2px solid rgba(180,222,250, .7);
+}
+
+
+/* Opera - Pre-Blink nix the custom arrow, go with a native select button */
+x:-o-prefocus, .dropdown::after {
+  display:none;
+}
+
+
+/* Hover style */
+.dropdown:hover {
+  border:1px solid #888;
+}
+
+/* Focus style */
+select:focus {
+  outline:none;
+  box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+  background-color:transparent;
+  color: #222;
+  border:1px solid #aaa;
+}
+
+
+/* Firefox focus has odd artifacts around the text, this kills that */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight:normal;
+}
+
+
+/* These are just demo button-y styles, style as you like */
+.button {
+  border: 1px solid #bbb;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  background: #f3f3f3; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+.output {
+  margin: 0 auto;
+  padding: 1em;
+}
+.colors {
+  padding: 2em;
+  color: #fff;
+  display: none;
+}
+.red {
+  background: #c04;
+}
+.yellow {
+  color: #000;
+  background: #f5e000;
+}
+.blue {
+  background: #079;
+}
+//footer {
+//  margin: 5em auto 3em;
+//  padding: 2em 2.5%;
+//  text-align: center;
+//}
+a {
+  color: #c04;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #903;
+  text-decoration: underline;
+}
+
+.form-wrapper{
+  padding: calculateRem(30px);
+
+  input[type="text"]{
+    background: #e9f7fe;
+    border: none;
+    min-height: 35px;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  label{
+    @include font-roboto-medium(15,#013056);
+    margin-left: 0;
+    span{
+      color: #f83e3f;
+    }
+  }
+  .type-of-work{
+    display: flex;
+    justify-content: space-between;
+    margin: calculateRem(5px);
+    align-items: flex-end;
+    p{
+      width: 87%;
+      @include font-roboto-regular(12,#013056);
+      background: #caddea;
+      margin: 0;
+      padding: calculateRem(5px) calculateRem(10px);
+    }
+
+    + div{
+      margin: 0;
+    }
+
+  }
+
+  .button{
+    background: #e9f7fe;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    &:hover{
+      border:none;
+    }
+    &:active{
+      border:none;
+    }
+    select{
+      @include font-roboto-regular(15,#013056);
+    }
+  }
+
+  textarea{
+    width: 100%;
+    background: #e9f7fe;
+    outline:none;
+    border:none;
+  }
+
+  .check-write{
+    display: flex;
+    flex-direction: column;
+
+      .check-write-row{
+        display: flex;
+        @include font-roboto-regular(15,#013056);
+        margin-bottom: calculateRem(20px);
+        label{
+            display: flex;
+            flex-direction: row-reverse;
+            input{
+              margin-right: calculateRem(10px);
+            }
+        }
+
+      }
+
+  > span{
+    display: flex;
+    flex-direction: column;
+      > span{
+        display: flex;
+        margin-bottom: calculateRem(10px);
+          label{
+            margin: 0;
+            margin-left: calculateRem(5px);
+              span{
+                font-weight: bold;
+                color: #013056;
+              }
+          }
+      }
+  }
+  }
+
+  .check-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calculateRem(15px);
+    label{
+      width: 47.5%;
+      margin: 0;
+    }
+
+
+  }
+
+  .form-button{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: calculateRem(30px);
+    button{
+      width: 25%;
+      @include font-roboto-bold(20,#fff);
+      padding: calculateRem(10px) 0;
+      background: #1b7fd0;
+      border:none;
+      position: relative;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: transparent;
+        left: 10px;
+        bottom: -12px;
+        box-shadow: 4px 4px 7px #9bb6be;
+        width: 3px;
+        height: 17px;
+        transform: rotate(50deg);
+      }
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color: #1b7fd0 transparent transparent transparent;
+      }
+      &:last-child{
+        text-transform: uppercase;
+      }
+    }
+  }
+  p{
+    display: flex;
+    color: #dd0000;
+    i{
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: calculateRem(30px);
+    }
+  }
+  .accept{
+    text-align: center;
+  }
+}
+
+.vip-offer-row{
+  margin-bottom: calculateRem(60px);
+  .vip-offer-wrapper{
+    background:#fff;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .vip-offer{
+    background:#1b7fd0;
+    padding: calculateRem(20px) calculateRem(25px) calculateRem(25px) calculateRem(25px);
+    width: 100%;
+    h3{
+      @include font-roboto-medium(22,#fdf9f1);
+      text-align: center;
+      text-transform: uppercase;
+      margin: calculateRem(20px) 0;
+      margin-top: 0;
+    }
+
+    .vip-offer-main{
+      background: #fff;
+      display: flex;
+      padding: calculateRem(30px);
+    }
+    .vip-item{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      p{
+        @include font-roboto-bold(18,#013056);
+      }
+      p:first-child{
+        @include font-roboto-medium(18,#013056);
+      }
+      span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: url("/build/svg/question-mark.svg") no-repeat #caddea;
+        background-position: center;
+      }
+      a{
+        @include font-roboto-regular(18,#ffffff);
+        background: #1b7fd0;
+        padding:  calculateRem(5px) calculateRem(15px);
+        border-radius: 10px;
+        max-height: 35px;
+        text-align: center;
+      }
+
+    }
+    .vip-item-img{
+      background: url("/build/svg/VIP.svg") no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      width: 30%;
+      min-height: 120px;
+      background-position: center;
+    }
+    .vip-item-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .vip-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 3.464px 7px 0px rgba(167, 192, 200, 0.75);
+    padding-top: calculateRem(30px);
+    padding-bottom: calculateRem(30px);
+
+    p{
+      margin: 0;
+      @include font-roboto-regular(22,#013056);
+      span{
+          @include font-roboto-bold(50,#1b7fd0);
+        &:last-child{
+          font-size: calculateRem(30px);
+          margin-left: calculateRem(15px);
+        }
+      }
+    }
+    .button{
+      width: 16%;
+      border:none;
+      background: #e9f7fe;
+    }
+    #colorselector{
+      width: 100%;
+    }
+    a{
+      background: #dd0000;
+      @include font-roboto-regular(26,#fff);
+      text-align: center;
+      width: 33%;
+      position: relative;
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          background: transparent;
+          left: 10px;
+          bottom: -12px;
+          box-shadow: 4px 4px 7px #9bb6be;
+          width: 3px;
+          height: 17px;
+          transform: rotate(50deg);
+        }
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color: #dd0000 transparent transparent transparent;
+      }
+    }
+  }
+}
+
+
