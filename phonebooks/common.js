@@ -20,47 +20,15 @@ var addHouse = document.querySelector('.add-house');
 var addFlat = document.querySelector('.add-flat');
 var addInitials = document.querySelector('.add-initials');
 //Styles
-{
-    addPhone.addEventListener('focus', function () {
-        addPhone.style.borderColor = '#ced4da';
-    });
+var checkEror = document.querySelectorAll('.form-1 .form-2');
+    for(var i = 0; i < checkEror.length; i++) {
+        checkEror.addEventListener('focus', function () {
+            checkEror.style.borderColor = '#ced4da';
+        });
+    }
 
-    addInitials.addEventListener('focus', event = function () {
-        addInitials.style.borderColor = '#ced4da';
-    });
 
-    addLastName.addEventListener('focus', event = function () {
-        addLastName.style.borderColor = '#ced4da';
-    });
 
-    addHouse.addEventListener('focus', event = function () {
-        addHouse.style.borderColor = '#ced4da';
-    });
-
-    addFlat.addEventListener('focus', event = function () {
-        addFlat.style.borderColor = '#ced4da';
-    });
-
-    phoneInput.addEventListener('focus', event = function () {
-        phoneInput.style.borderColor = '#ced4da';
-    });
-
-    lastNameInput.addEventListener('focus', event = function () {
-        lastNameInput.style.borderColor = '#ced4da';
-    });
-
-    initialsInput.addEventListener('focus', event = function () {
-        initialsInput.style.borderColor = '#ced4da';
-    });
-
-    houseInput.addEventListener('focus', event = function () {
-        houseInput.style.borderColor = '#ced4da';
-    });
-
-    flatInput.addEventListener('focus', event = function () {
-        flatInput.style.borderColor = '#ced4da';
-    });
-}
 // End Styles
 
 
@@ -127,7 +95,34 @@ function Contact(phone = false,lastName = false,initials = false,houseNumber = f
 
 }
 
+var phoneError = document.querySelectorAll('.add-phone,.phone-input');
+for(let i = 0; i < phoneError.length; i++) {
+        phoneError[i].addEventListener('change',function () {
+            if(!phoneValidate(this.value)){this.style.borderColor = 'red';} else this.style.borderColor = '#ced4da';
+        });
+ }
 
+var lastNameError = document.querySelectorAll('.last-name-input,.add-last-name');
+for(let i = 0; i < phoneError.length; i++) {
+    lastNameError[i].addEventListener('change',function () {
+        if(!lastNameValidate(this.value)){this.style.borderColor = 'red';} else this.style.borderColor = '#ced4da';
+    });
+}
+
+var initialsError = document.querySelectorAll('.add-initials,.initials-input');
+for(let i = 0; i < phoneError.length; i++) {
+    initialsError[i].addEventListener('change',function () {
+        if(!initialVatidation(this.value)){this.style.borderColor = 'red';} else this.style.borderColor = '#ced4da';
+    });
+}
+
+var houseFlatError = document.querySelectorAll('.house-input, .flat-input, .add-house, .add-flat');
+console.log(houseFlatError);
+for(let i = 0; i < houseFlatError.length; i++) {
+    houseFlatError[i].addEventListener('change',function () {
+        if(this.value.length <= 3 && this.value > 0){this.style.borderColor = '#ced4da';} else this.style.borderColor = 'red';
+    });
+}
 
 addContact.addEventListener('click', event = function () {
     var phone = document.querySelector('.add-phone').value;
@@ -154,9 +149,6 @@ addContact.addEventListener('click', event = function () {
         phoneValid = phoneValidate(phone);
     }
 
-    if(!phoneValid){
-        addPhone.style.borderColor = 'red';
-    }
 
     //================================
 
@@ -166,9 +158,6 @@ addContact.addEventListener('click', event = function () {
         lastNameValid = lastNameValidate(lastName);
     }
 
-    if(!lastNameValid){
-        addLastName.style.borderColor = 'red';
-    }
 
     //================================
 
@@ -176,9 +165,6 @@ addContact.addEventListener('click', event = function () {
         initialsValid = true;
     }else{
         initialsValid = initialVatidation(initials);
-    }
-    if(!initialsValid){
-        addInitials.style.borderColor = 'red';
     }
 
     // ================================
@@ -188,9 +174,7 @@ addContact.addEventListener('click', event = function () {
         houseValid = houseValidation(house);
     }
 
-    if(!houseValid){
-        addHouse.style.borderColor = 'red';
-    }
+
 
     //================================
 
@@ -200,9 +184,6 @@ addContact.addEventListener('click', event = function () {
         flatValid = flatValidation(flat);
     }
 
-    if(!flatValid){
-        addFlat.style.borderColor = 'red';
-    }
 
 
     if(phoneValid && lastNameValid && initialsValid && houseValid && flatValid){
@@ -244,9 +225,6 @@ search.addEventListener('click', evt => {
         phoneValid = phoneValidate(phone);
     }
 
-    if(!phoneValid){
-        phoneInput.style.borderColor = 'red';
-    }
 
     //================================
 
@@ -256,9 +234,7 @@ search.addEventListener('click', evt => {
         lastNameValid = lastNameValidate(lastName);
     }
 
-    if(!lastNameValid){
-        lastNameInput.style.borderColor = 'red';
-    }
+
 
     //================================
 
@@ -267,9 +243,7 @@ search.addEventListener('click', evt => {
     }else{
         initialsValid = initialVatidation(initials);
     }
-    if(!initialsValid){
-        initialsInput.style.borderColor = 'red';
-    }
+
 
    // ================================
     if(house === ''){
@@ -278,9 +252,7 @@ search.addEventListener('click', evt => {
         houseValid = houseValidation(house);
     }
 
-    if(!houseValid){
-        houseInput.style.borderColor = 'red';
-    }
+
 
     //================================
 
@@ -290,9 +262,7 @@ search.addEventListener('click', evt => {
         flatValid = flatValidation(flat);
     }
 
-    if(!flatValid){
-        flatInput.style.borderColor = 'red';
-    }
+
 
     //=================================
 
